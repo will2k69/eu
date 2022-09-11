@@ -1,0 +1,333 @@
+header {
+    background: linear-gradient(to bottom, #0000ff, #0000b3, #000033,#1a1a1a);
+    height: 300px;
+    color: white;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    
+}
+
+#container {
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    width: 160px;
+    height: 160px;
+    background-color: #470066;
+    border-radius: 80px;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    line-height: 160px;
+}
+
+#photo {
+    position: relative;
+    top: -2px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+#welcome {
+    position: relative;
+    top: 35px;
+    text-align: center;
+}
+
+#box-left {
+    float: left;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    width: 40%;
+}
+
+article {
+    border: 1px solid red;
+}
+
+#box-html,
+#box-css,
+#box-js,
+#box-boot {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    width: 100px;
+    height: 75px;
+    border-radius: 10px;
+    line-height: 75px;
+}
+
+#box-html {
+    background: red;
+}
+
+#box-css {
+    background: #00cccc;
+}
+
+#box-js {
+    background: yellow;
+}
+
+#box-boot {
+    background: blue;
+}
+
+#box-html > img,
+#box-css > img,
+#box-js > img,
+#box-boot > img {
+    width:50px;
+    height:50px;
+    position: absolute;
+    right: 25px;
+    top: 13px;
+    animation-iteration-count: infinite;
+}
+
+#msg-html,
+#msg-boot {
+    color: white;
+}
+
+#msg-css,
+#msg-js {
+    color: black;
+}
+
+#msg-html,
+#msg-css,
+#msg-js,
+#msg-boot {
+    overflow: hidden;
+    height: 75px;
+    position: relative;
+    line-height: 75px;
+}
+
+#msg-html > p,
+#msg-css > p,
+#msg-js > p,
+#msg-boot > p {
+    font-size: 0.8em;
+    width: 70%;
+    position: relative;
+    left: -100%;
+    line-height: 16px;
+}
+
+#msg-html:hover p,
+#msg-css:hover p,
+#msg-js:hover p,
+#msg-boot:hover p {
+    left: 10px;
+    transition: all 0.5s;
+}
+
+#box-right {
+    float: right;
+    border: 1px solid red;
+    width: 60%;
+    position: relative;
+}
+
+#qa {
+    font-size: 0.8em;
+}
+
+#java {
+    position: absolute;
+    right: 250px;
+    top: 0px;
+}
+
+#logo-selenium {
+    width:50px;
+    height:50px;
+    position: relative;
+
+}
+#logo-java {
+    width:50px;
+    height:50px;
+    position: relative;
+
+}
+
+#box-html > img {
+    animation-name: logo-html;
+    animation-duration: 1.5s;
+}
+
+#box-css > img {
+    animation-name: logo-css;
+    animation-duration: 3s;
+}
+
+#box-js > img {
+    animation-name: logo-js;
+    animation-duration: 5s;
+}
+
+#box-boot > img {
+    animation-name: logo-boot;
+    animation-duration: 5s;
+}
+
+@keyframes logo-html {
+    0%, 100% {
+        transform: translateY(-10px);
+    } 50% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes logo-css {
+    0%, 100% {
+        transform: rotateY(90deg);
+    } 50% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes logo-js {
+    0%, 100% {
+        transform: rotate(360deg)
+    } 50% {
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes logo-boot {
+    0%, 100% {
+        transform: rotate(-360deg)
+    } 50% {
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes html {
+    from {
+        width: 100px;
+        height: 75px;
+        background: red;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: red;
+        width: 400px;
+        height: 75px;
+    }
+}
+@keyframes html-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: red;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: red;
+        border-radius: 10px;
+    }
+}
+
+@keyframes css {
+    from {
+        width: 100px;
+        height: 75px;
+        background: #00cccc;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: #00cccc;
+        width: 400px;
+        height: 75px;
+    }
+}
+@keyframes css-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: #00cccc;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: #00cccc;
+        border-radius: 10px;
+    }
+}
+
+@keyframes js {
+    from {
+        width: 100px;
+        height: 75px;
+        background: yellow;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: yellow;
+        width: 400px;
+        height: 75px;
+    }
+}
+@keyframes js-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: yellow;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: yellow;
+        border-radius: 10px;
+    }
+}
+
+@keyframes boot {
+    from {
+        width: 100px;
+        height: 75px;
+        background: blue;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: blue;
+        width: 400px;
+        height: 75px;
+    }
+}
+@keyframes boot-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: blue;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: blue;
+        border-radius: 10px;
+    }
+}

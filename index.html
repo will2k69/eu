@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá!</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="anima.js"></script>
+</head>
+<body style="background-color: #1a1a1a;" class="container">
+    <header>
+        <div id="container">
+            <div id="logo">
+                <img id="photo" src="images/photo.jpeg" alt="Eu">
+            </div>
+        </div>
+        <p id="welcome">Olá, <span id="user"></span>!<br>Deixa eu te apresentar o meu currículo.<br>Passe o mouse ou clique nas opções abaixo.<br>Espero que goste!</p>
+        <!--<script>
+            var user = prompt("Por favor, digite seu nome :D")
+            document.getElementById('user').innerHTML = user;
+        </script>-->
+    </header>
+    <!---->
+    
+    <!---->
+    <article>
+        <section id="box-left">
+            <div onmouseover="boxHTML()" onmouseout="noBoxHTML()" id="box-html">
+                <img src="images/html5-logo.png" alt="HTML5" srcset="">
+                <div id="msg-html">
+                    <p>O HTML me ajudou a entender melhor como funciona os protocolos de internet</p>
+                </div>
+            </div>
+
+            <div onmouseover="boxCSS()" onmouseout="noBoxCSS()" id="box-css">
+                <img src="images/css-logo.png" alt="CSS3" srcset="">
+                <div id="msg-css">
+                    <p>O css me ajudou a entender melhor como funciona os protocolos de internet</p>
+                </div>
+            </div>
+
+            <div onmouseover="boxJS()" onmouseout="noBoxJS()" id="box-js">
+                <img src="images/javascript-logo.png" alt="JavaScript" srcset="">
+                <div id="msg-js">
+                    <p>O js me ajudou a entender melhor como funciona os protocolos de internet</p>
+                </div>
+            </div>
+
+            <div onmouseover="boxBoot()" onmouseout="noBoxBoot()" id="box-boot">
+                <img src="images/bootstrap-logo.png" alt="Bootstrap" srcset="">
+                <div id="msg-boot">
+                    <p>O Bootstrap me ajudou a entender melhor como funciona os protocolos de internet</p>
+                </div>
+            </div>
+        </section>
+        <!--Box acima destinado ao front-->
+        <section id="box-right">
+            <p>
+                <a class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Quality Assurance</a>
+                <button class="btn btn-primary" style="position: relative; left: 200px;" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Java</button>
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body" id="qa">
+                        <img id="logo-selenium" src="images/selenium-logo.png" alt="Selenium">
+                        Me interessei por Testes Automatizados quando estava cursando a disciplina "Projeto de Software", e com isso, aprendi por conta própria sobre Testes Funcionais, utilizando o conhecimento na aplicação feita.<br>Utilizei o framework Selenium
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body" id="qa">
+                        <img id="logo-java" src="images/java-logo.png" alt="Java">
+                        Me interessei por Testes Automatizados quando estava cursando a disciplina "Projeto de Software", e com isso, aprendi por conta própria sobre Testes Funcionais, utilizando o conhecimento na aplicação feita.<br>Utilizei o framework Selenium.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </article>
+    <!------------------------------------------------------------------>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>
