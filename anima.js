@@ -2,6 +2,7 @@ function boxHTML() {
     document.getElementById('box-html').style.animationName = "html"
     document.getElementById('box-html').style.animationDuration = "0.4s"
     document.getElementById('box-html').style.animationFillMode = "forwards"
+    
 }
 function noBoxHTML() {
     document.getElementById('box-html').style.animationName = "html-inverse"

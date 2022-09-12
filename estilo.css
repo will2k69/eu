@@ -134,13 +134,30 @@ header {
     transition: all 0.5s;
 }
 
+.progress-color-html {
+    background-color: #990000 !important;
+}
+.progress-color-css {
+    background-color: #006466 !important;
+}
+.progress-color-js {
+    background-color: #804600 !important;
+}
+.progress-color-boot {
+    background-color: #340c5a !important;
+}
+
 #box-left {
     float: left;
+    width: 40%;
+}
+
+#techs-front {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 350px;
-    width: 40%;
+    float: left;
 }
 
 #box-right {
@@ -177,6 +194,13 @@ header {
 .text-carousel {
     float: right;
     width: 90%;
+    color: white;
+    text-align: center;
+}
+.text-carousel-init {
+    font-weight: bold;
+    width: 100%;
+    font-size: 32px;
     color: white;
     text-align: center;
 }
@@ -365,6 +389,7 @@ header {
         border-radius: 10px;
     }
 }
+
 
 @media (max-width: 500px) {
     header {

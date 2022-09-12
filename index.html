@@ -29,31 +29,42 @@
     <!---->
     <article>
         <section id="box-left">
-            <div onmouseover="boxHTML()" onmouseout="noBoxHTML()" id="box-html">
-                <img src="images/html5-logo.png" alt="HTML5" srcset="">
-                <div id="msg-html">
-                    <p>O HTML me ajudou a entender melhor como funciona os protocolos de internet</p>
+            <div id="techs-front">
+                <div onmouseover="boxHTML()" onmouseout="noBoxHTML()" id="box-html">
+                    <img src="images/html5-logo.png" alt="HTML5" srcset="">
+                    <div id="msg-html">
+                        <p><strong>O HTML me ajudou a entender melhor como funciona os protocolos de internet</strong></p>
+                        <div class="progress" style="position: relative; left: 5px; top: 5px; width: 75%;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated progress-color-html" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div onmouseover="boxCSS()" onmouseout="noBoxCSS()" id="box-css">
-                <img src="images/css-logo.png" alt="CSS3" srcset="">
-                <div id="msg-css">
-                    <p>O css me ajudou a entender melhor como funciona os protocolos de internet</p>
+                <div onmouseover="boxCSS()" onmouseout="noBoxCSS()" id="box-css">
+                    <img src="images/css-logo.png" alt="CSS3" srcset="">
+                    <div id="msg-css">
+                        <p><strong>O css me ajudou a entender melhor como funciona os protocolos de internet</strong></p>
+                        <div class="progress" style="position: relative; left: 5px; top: 5px; width: 75%;">
+                            <div class="progress-bar progress-color-css progress-bar-striped progress-bar-animated bg-sucess" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div onmouseover="boxJS()" onmouseout="noBoxJS()" id="box-js">
-                <img src="images/javascript-logo.png" alt="JavaScript" srcset="">
-                <div id="msg-js">
-                    <p>O js me ajudou a entender melhor como funciona os protocolos de internet</p>
+                <div onmouseover="boxJS()" onmouseout="noBoxJS()" id="box-js">
+                    <img src="images/javascript-logo.png" alt="JavaScript" srcset="">
+                    <div id="msg-js">
+                        <p><strong>O js me ajudou a entender melhor como funciona os protocolos de internet</strong></p>
+                        <div class="progress" style="position: relative; left: 5px; top: 5px; width: 75%;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated progress-color-js" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div onmouseover="boxBoot()" onmouseout="noBoxBoot()" id="box-boot">
-                <img src="images/bootstrap-logo.png" alt="Bootstrap" srcset="">
-                <div id="msg-boot">
-                    <p>O Bootstrap me ajudou a entender melhor como funciona os protocolos de internet</p>
+                <div onmouseover="boxBoot()" onmouseout="noBoxBoot()" id="box-boot">
+                    <img src="images/bootstrap-logo.png" alt="Bootstrap" srcset="">
+                    <div id="msg-boot">
+                        <p><strong>O Bootstrap me ajudou a entender melhor como funciona os protocolos de internet</strong></p>
+                        <div class="progress" style="position: relative; left: 5px; top: 5px; width: 75%;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated progress-color-boot" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -107,9 +118,15 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
+                            <div class="box-items-carousel">
+                                <p class="text-carousel-init">Outras tecnologias</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
                             <div class="box-items-carousel">
                                 <img class="logo" src="images/selenium-logo.png" alt="Selenium framework">
                                 <p class="text-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maxime neque cum culpa adipisci molestias facilis explicabo voluptas ab doloribus aspernatur laudantium fugit animi, alias nostrum fugiat dignissimos consequuntur eos.</p>
