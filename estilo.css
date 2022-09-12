@@ -5,11 +5,38 @@ header {
     position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
+    body {
+        background-color: white;
+    }
+    #box-left {
+        clear: both;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 350px;
+        width: 40%;
+    }
     
+    #box-right {
+        float: left;
+        width: 60%;
+        position: relative;
+        height: 350px;
+        padding-top: 20px;
+    }
+}
+
+#cabecalho {
+    width: 480px;
+    position: relative;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
 }
 
 #container {
+    float: left;
     width: 160px;
     margin-left: auto;
     margin-right: auto;
@@ -21,9 +48,15 @@ header {
     background-color: #470066;
     border-radius: 80px;
     position: relative;
-    top: 30px;
+    top: 10px;
     text-align: center;
     line-height: 160px;
+}
+
+#logo:hover {
+    width: -10px;
+    background-color: white;
+    transition: all 0.5s;
 }
 
 #photo {
@@ -36,22 +69,10 @@ header {
 
 #welcome {
     position: relative;
-    top: 35px;
+    top: 45px;
+    float: right;
     text-align: center;
-}
-
-#box-left {
-    float: left;
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 350px;
-    width: 40%;
-}
-
-article {
-    border: 1px solid red;
+    font-size: 15px;
 }
 
 #box-html,
@@ -134,15 +155,56 @@ article {
     transition: all 0.5s;
 }
 
-#box-right {
-    float: right;
-    border: 1px solid red;
-    width: 60%;
-    position: relative;
+#box-left {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    width: 40%;
 }
 
-#qa {
+#box-right {
+    float: right;
+    width: 60%;
+    position: relative;
+    height: 350px;
+    padding-top: 20px;
+}
+
+.accordion-up {
+    background-color: #660066 !important;
+    color: white !important;
+}
+.accordion-down {
+    background-color: #1a001a !important;
+    color: white !important;
+    font-size: 12px;
+}
+
+#others {
+    margin-top: 50px;
     font-size: 0.8em;
+}
+
+.box-items-carousel {
+    position: relative;
+    top: 8px;
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-carousel {
+    float: right;
+    width: 90%;
+    color: white;
+    text-align: center;
+}
+
+.bot-down {
+    position: relative;
+    top: 85px;
 }
 
 #java {
@@ -151,17 +213,10 @@ article {
     top: 0px;
 }
 
-#logo-selenium {
+.logo {
     width:50px;
     height:50px;
     position: relative;
-
-}
-#logo-java {
-    width:50px;
-    height:50px;
-    position: relative;
-
 }
 
 #box-html > img {
@@ -176,7 +231,7 @@ article {
 
 #box-js > img {
     animation-name: logo-js;
-    animation-duration: 5s;
+    animation-duration: 1.8s;
 }
 
 #box-boot > img {
@@ -202,9 +257,9 @@ article {
 
 @keyframes logo-js {
     0%, 100% {
-        transform: rotate(360deg)
+        transform: rotate(45deg)
     } 50% {
-        transform: rotate(0deg)
+        transform: rotate(-45deg)
     }
 }
 

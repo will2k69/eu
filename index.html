@@ -9,18 +9,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="anima.js"></script>
 </head>
-<body style="background-color: #1a1a1a;" class="container">
+<body style="background-color: #1a1a1a;" class="container-sm">
     <header>
-        <div id="container">
-            <div id="logo">
-                <img id="photo" src="images/photo.jpeg" alt="Eu">
+        <div id="cabecalho">
+            <div id="container">
+                <div id="logo">
+                    <img id="photo" src="images/photo.jpeg" alt="Eu">
+                </div>
             </div>
+            <p id="welcome">Olá, <span id="user"></span>!<br>Deixa eu te apresentar o meu currículo.<br>Passe o mouse ou clique nas opções abaixo.<br>Espero que goste!</p>
         </div>
-        <p id="welcome">Olá, <span id="user"></span>!<br>Deixa eu te apresentar o meu currículo.<br>Passe o mouse ou clique nas opções abaixo.<br>Espero que goste!</p>
-        <script>
+        <!--<script>
             var user = prompt("Por favor, digite seu nome :D")
             document.getElementById('user').innerHTML = user;
-        </script>
+        </script>-->
     </header>
     <!---->
     
@@ -57,7 +59,121 @@
         </section>
         <!--Box acima destinado ao front-->
         <section id="box-right">
-            <p>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button accordion-up" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Quem sou eu?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body accordion-down">
+                      Meu nome mesmo é José Willamys Gonçalves da Silva, mas pode me chamar de Will :D.<br>
+                      Sou estudante de Engenharia de Computação na Universidade Federal de Alagoas - UFAL.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed accordion-up" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Formação
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body accordion-down">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed accordion-up" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Competências
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body accordion-down">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div id="others">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators bot-down">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="box-items-carousel">
+                                <img class="logo" src="images/selenium-logo.png" alt="Selenium framework">
+                                <p class="text-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maxime neque cum culpa adipisci molestias facilis explicabo voluptas ab doloribus aspernatur laudantium fugit animi, alias nostrum fugiat dignissimos consequuntur eos.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box-items-carousel">
+                                <img class="logo" src="images/java-logo.png" alt="Java language">
+                                <p class="text-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maxime neque cum culpa adipisci molestias facilis explicabo voluptas ab doloribus aspernatur laudantium fugit animi, alias nostrum fugiat dignissimos consequuntur eos.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box-items-carousel">
+                                <img class="logo" src="images/python-logo.png" alt="Python language" srcset="">
+                                <p class="text-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maxime neque cum culpa adipisci molestias facilis explicabo voluptas ab doloribus aspernatur laudantium fugit animi, alias nostrum fugiat dignissimos consequuntur eos.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box-items-carousel">
+                                <img class="logo" src="images/c-logo.png" alt="C language" srcset="">
+                                <p class="text-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maxime neque cum culpa adipisci molestias facilis explicabo voluptas ab doloribus aspernatur laudantium fugit animi, alias nostrum fugiat dignissimos consequuntur eos.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box-items-carousel">
+                                <img class="logo" src="images/git-logo.png" alt="Git" srcset="">
+                                <p class="text-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maxime neque cum culpa adipisci molestias facilis explicabo voluptas ab doloribus aspernatur laudantium fugit animi, alias nostrum fugiat dignissimos consequuntur eos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <!--<a class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <img id="logo-selenium" src="images/selenium-logo.png" alt="Selenium">
+                </a>
+                <button class="btn btn-primary" style="position: relative;" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
+                    <img id="logo-java" src="images/java-logo.png" alt="Java">
+                </button>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
+                                Me interessei por Testes Automatizados quando estava cursando a disciplina "Projeto de Software", e com isso, aprendi por conta própria sobre Testes Funcionais, utilizando o conhecimento na aplicação feita.<br>Utilizei o framework Selenium
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <div class="card card-body">
+                                Javaaa aaakslas Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus eos sapiente, suscipit nisi pariatur enim recusandae impedit quisquam, placeat laborios
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <!--<p>
                 <a class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Quality Assurance</a>
                 <button class="btn btn-primary" style="position: relative; left: 200px;" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Java</button>
               </p>
@@ -78,7 +194,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div>-->
         </section>
     </article>
     <!------------------------------------------------------------------>
