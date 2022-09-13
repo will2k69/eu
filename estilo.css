@@ -4,7 +4,6 @@ header {
     color: white;
     position: relative;
 }
-
 #cabecalho {
     width: 480px;
     position: relative;
@@ -13,14 +12,12 @@ header {
     margin-right: auto;
     height: 200px;
 }
-
 #container {
     float: left;
     width: 160px;
     margin-left: auto;
     margin-right: auto;
 }
-
 #logo {
     width: 160px;
     height: 160px;
@@ -31,13 +28,11 @@ header {
     text-align: center;
     line-height: 160px;
 }
-
 #logo:hover {
     width: -10px;
     background-color: white;
     transition: all 0.5s;
 }
-
 #photo {
     position: relative;
     top: -2px;
@@ -45,7 +40,6 @@ header {
     height: 150px;
     border-radius: 75px;
 }
-
 #welcome {
     position: relative;
     top: 45px;
@@ -53,7 +47,6 @@ header {
     text-align: center;
     font-size: 15px;
 }
-
 #contato {
     width: 120px;
     position: relative;
@@ -61,13 +54,14 @@ header {
     display: flex;
     flex-direction: column;
     font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 #contato img {
     width: 20px;
     height: 20px;
 }
-
 #box-html,
 #box-css,
 #box-js,
@@ -80,23 +74,18 @@ header {
     border-radius: 10px;
     line-height: 75px;
 }
-
 #box-html {
     background: red;
 }
-
 #box-css {
     background: #00cccc;
 }
-
 #box-js {
     background: yellow;
 }
-
 #box-boot {
     background: blue;
 }
-
 #box-html > img,
 #box-css > img,
 #box-js > img,
@@ -108,17 +97,14 @@ header {
     top: 13px;
     animation-iteration-count: infinite;
 }
-
 #msg-html,
 #msg-boot {
     color: white;
 }
-
 #msg-css,
 #msg-js {
     color: black;
 }
-
 #msg-html,
 #msg-css,
 #msg-js,
@@ -128,26 +114,24 @@ header {
     position: relative;
     line-height: 75px;
 }
-
 #msg-html > p,
 #msg-css > p,
 #msg-js > p,
 #msg-boot > p {
-    font-size: 0.8em;
+    font-size: 0.7em;
     width: 70%;
     position: relative;
     left: -100%;
-    line-height: 16px;
+    line-height: 15px;
 }
-
 #msg-html:hover p,
 #msg-css:hover p,
 #msg-js:hover p,
 #msg-boot:hover p {
     left: 10px;
+    top: 10px;
     transition: all 0.5s;
 }
-
 .progress-color-html {
     background-color: #990000 !important;
 }
@@ -160,12 +144,10 @@ header {
 .progress-color-boot {
     background-color: #340c5a !important;
 }
-
 #box-left {
     float: left;
     width: 40%;
 }
-
 #techs-front {
     display: flex;
     flex-direction: column;
@@ -173,7 +155,6 @@ header {
     height: 350px;
     float: left;
 }
-
 #box-right {
     float: right;
     width: 60%;
@@ -181,7 +162,6 @@ header {
     height: 350px;
     padding-top: 20px;
 }
-
 .accordion-up {
     background-color: #000033 !important;
     color: white !important;
@@ -191,12 +171,10 @@ header {
     color: white !important;
     font-size: 12px;
 }
-
 #others {
     margin-top: 50px;
     font-size: 0.8em;
 }
-
 .box-items-carousel {
     position: relative;
     top: 8px;
@@ -204,7 +182,6 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
-
 .text-carousel {
     float: right;
     width: 90%;
@@ -218,45 +195,59 @@ header {
     color: white;
     text-align: center;
 }
-
 .bot-down {
     position: relative;
     top: 85px;
 }
-
 #java {
     position: absolute;
     right: 250px;
     top: 0px;
 }
-
 .logo {
     width:50px;
     height:50px;
     position: relative;
 }
-
 #box-html > img {
     animation-name: logo-html;
     animation-duration: 1.5s;
 }
-
 #box-css > img {
     animation-name: logo-css;
     animation-duration: 3s;
 }
-
 #box-js > img {
     animation-name: logo-js;
     animation-duration: 1.8s;
 }
-
 #box-boot > img {
     animation-name: logo-boot;
     animation-duration: 5s;
 }
 
 @keyframes logo-html {
+    0%, 100% {
+        transform: translateY(-10px);
+    } 50% {
+        transform: translateY(10px);
+    }
+}
+@-webkit-keyframes logo-html {
+    0%, 100% {
+        transform: translateY(-10px);
+    } 50% {
+        transform: translateY(10px);
+    }
+}
+@-moz-keyframes logo-html {
+    0%, 100% {
+        transform: translateY(-10px);
+    } 50% {
+        transform: translateY(10px);
+    }
+}
+@-o-keyframes logo-html {
     0%, 100% {
         transform: translateY(-10px);
     } 50% {
@@ -271,6 +262,27 @@ header {
         transform: rotate(360deg);
     }
 }
+@-webkit-keyframes logo-css {
+    0%, 100% {
+        transform: rotateY(90deg);
+    } 50% {
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes logo-css {
+    0%, 100% {
+        transform: rotateY(90deg);
+    } 50% {
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes logo-css {
+    0%, 100% {
+        transform: rotateY(90deg);
+    } 50% {
+        transform: rotate(360deg);
+    }
+}
 
 @keyframes logo-js {
     0%, 100% {
@@ -279,8 +291,50 @@ header {
         transform: rotate(-45deg)
     }
 }
+@-webkit-keyframes logo-js {
+    0%, 100% {
+        transform: rotate(45deg)
+    } 50% {
+        transform: rotate(-45deg)
+    }
+}
+@-moz-keyframes logo-js {
+    0%, 100% {
+        transform: rotate(45deg)
+    } 50% {
+        transform: rotate(-45deg)
+    }
+}
+@-o-keyframes logo-js {
+    0%, 100% {
+        transform: rotate(45deg)
+    } 50% {
+        transform: rotate(-45deg)
+    }
+}
 
 @keyframes logo-boot {
+    0%, 100% {
+        transform: rotate(-360deg)
+    } 50% {
+        transform: rotate(0deg)
+    }
+}
+@-webkit-keyframes logo-boot {
+    0%, 100% {
+        transform: rotate(-360deg)
+    } 50% {
+        transform: rotate(0deg)
+    }
+}
+@-moz-keyframes logo-boot {
+    0%, 100% {
+        transform: rotate(-360deg)
+    } 50% {
+        transform: rotate(0deg)
+    }
+}
+@-o-keyframes logo-boot {
     0%, 100% {
         transform: rotate(-360deg)
     } 50% {
@@ -302,7 +356,91 @@ header {
         height: 75px;
     }
 }
+@-webkit-keyframes html {
+    from {
+        width: 100px;
+        height: 75px;
+        background: red;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: red;
+        width: 400px;
+        height: 75px;
+    }
+}
+@-moz-keyframes html {
+    from {
+        width: 100px;
+        height: 75px;
+        background: red;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: red;
+        width: 400px;
+        height: 75px;
+    }
+}
+@-o-keyframes html {
+    from {
+        width: 100px;
+        height: 75px;
+        background: red;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: red;
+        width: 400px;
+        height: 75px;
+    }
+}
 @keyframes html-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: red;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: red;
+        border-radius: 10px;
+    }
+}
+@-webkit-keyframes html-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: red;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: red;
+        border-radius: 10px;
+    }
+}
+@-moz-keyframes html-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: red;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: red;
+        border-radius: 10px;
+    }
+}
+@-o-keyframes html-inverse {
     from {
         border-radius: 10px 50px 50px 10px;
         background: red;
@@ -331,7 +469,91 @@ header {
         height: 75px;
     }
 }
+@-webkit-keyframes css {
+    from {
+        width: 100px;
+        height: 75px;
+        background: #00cccc;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: #00cccc;
+        width: 400px;
+        height: 75px;
+    }
+}
+@-moz-keyframes css {
+    from {
+        width: 100px;
+        height: 75px;
+        background: #00cccc;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: #00cccc;
+        width: 400px;
+        height: 75px;
+    }
+}
+@-o-keyframes css {
+    from {
+        width: 100px;
+        height: 75px;
+        background: #00cccc;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: #00cccc;
+        width: 400px;
+        height: 75px;
+    }
+}
 @keyframes css-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: #00cccc;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: #00cccc;
+        border-radius: 10px;
+    }
+}
+@-webkit-keyframes css-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: #00cccc;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: #00cccc;
+        border-radius: 10px;
+    }
+}
+@-moz-keyframes css-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: #00cccc;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: #00cccc;
+        border-radius: 10px;
+    }
+}
+@-o-keyframes css-inverse {
     from {
         border-radius: 10px 50px 50px 10px;
         background: #00cccc;
@@ -360,7 +582,91 @@ header {
         height: 75px;
     }
 }
+@-webkit-keyframes js {
+    from {
+        width: 100px;
+        height: 75px;
+        background: yellow;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: yellow;
+        width: 400px;
+        height: 75px;
+    }
+}
+@-moz-keyframes js {
+    from {
+        width: 100px;
+        height: 75px;
+        background: yellow;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: yellow;
+        width: 400px;
+        height: 75px;
+    }
+}
+@-o-keyframes js {
+    from {
+        width: 100px;
+        height: 75px;
+        background: yellow;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: yellow;
+        width: 400px;
+        height: 75px;
+    }
+}
 @keyframes js-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: yellow;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: yellow;
+        border-radius: 10px;
+    }
+}
+@-webkit-keyframes js-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: yellow;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: yellow;
+        border-radius: 10px;
+    }
+}
+@-moz-keyframes js-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: yellow;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: yellow;
+        border-radius: 10px;
+    }
+}
+@-o-keyframes js-inverse {
     from {
         border-radius: 10px 50px 50px 10px;
         background: yellow;
@@ -389,6 +695,48 @@ header {
         height: 75px;
     }
 }
+@-webkit-keyframes boot {
+    from {
+        width: 100px;
+        height: 75px;
+        background: blue;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: blue;
+        width: 400px;
+        height: 75px;
+    }
+}
+@-moz-keyframes boot {
+    from {
+        width: 100px;
+        height: 75px;
+        background: blue;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: blue;
+        width: 400px;
+        height: 75px;
+    }
+}
+@-o-keyframes boot {
+    from {
+        width: 100px;
+        height: 75px;
+        background: blue;
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 10px 50px 50px 10px;
+        background: blue;
+        width: 400px;
+        height: 75px;
+    }
+}
 @keyframes boot-inverse {
     from {
         border-radius: 10px 50px 50px 10px;
@@ -403,7 +751,48 @@ header {
         border-radius: 10px;
     }
 }
-
+@-webkit-keyframes boot-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: blue;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: blue;
+        border-radius: 10px;
+    }
+}
+@-moz-keyframes boot-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: blue;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: blue;
+        border-radius: 10px;
+    }
+}
+@-o-keyframes boot-inverse {
+    from {
+        border-radius: 10px 50px 50px 10px;
+        background: blue;
+        width: 400px;
+        height: 75px;
+    }
+    to {
+        width: 100px;
+        height: 75px;
+        background: blue;
+        border-radius: 10px;
+    }
+}
 
 @media (max-width: 500px) {
     header {
@@ -636,5 +1025,15 @@ header {
             background: blue;
             border-radius: 10px;
         }
+    }
+}
+@media (min-width: 2500px) {
+    header {
+        width: 1800px;
+        background: linear-gradient(to bottom, #0000ff, #0000b3, #000033,#1a1a1a);
+        height: 300px;
+        color: white;
+        position: relative;
+        right: 250px;
     }
 }
