@@ -1,6 +1,6 @@
 function boxHTML() {
     document.getElementById('box-html').style.animationName = "html"
-    document.getElementById('box-html').style.animationDuration = "0.4s"
+    document.getElementById('box-html').style.animationDuration = "0.3s"
     document.getElementById('box-html').style.animationFillMode = "forwards"
     
 }
@@ -10,7 +10,7 @@ function noBoxHTML() {
 
 function boxCSS() {
     document.getElementById('box-css').style.animationName = "css"
-    document.getElementById('box-css').style.animationDuration = "0.4s"
+    document.getElementById('box-css').style.animationDuration = "0.3s"
     document.getElementById('box-css').style.animationFillMode = "forwards"
 }
 function noBoxCSS() {
@@ -19,7 +19,7 @@ function noBoxCSS() {
 
 function boxJS() {
     document.getElementById('box-js').style.animationName = "js"
-    document.getElementById('box-js').style.animationDuration = "0.4s"
+    document.getElementById('box-js').style.animationDuration = "0.3s"
     document.getElementById('box-js').style.animationFillMode = "forwards"
 }
 function noBoxJS() {
@@ -28,7 +28,7 @@ function noBoxJS() {
 
 function boxBoot() {
     document.getElementById('box-boot').style.animationName = "boot"
-    document.getElementById('box-boot').style.animationDuration = "0.4s"
+    document.getElementById('box-boot').style.animationDuration = "0.3s"
     document.getElementById('box-boot').style.animationFillMode = "forwards"
 }
 function noBoxBoot() {
